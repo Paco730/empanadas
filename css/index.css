@@ -1,0 +1,94 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: antiquewhite;
+    font-size: 12px;
+    /*este es un comentario*/
+}
+header{ 
+    /*corresponde a la cabecera de la pagina*/
+background-color: black;
+color: white;
+padding: 1rem;/* rem=relativa-valor por defecto==12px pero le puedo cambiar en font-size*/
+text-align: center;
+}
+
+nav{
+    display: flex;/*todas las cajas desordenas la ordenan*/
+    justify-content: center;/*con este justifi -contetn la ordena en el centor*/
+    background-color: red;
+    border-bottom: 10px solid yellow;/*borde solo abajo primero tamaño ,todo y el color...es para el borde de abajo*/
+}
+
+nav ul{
+    display: flex;/*esta es la que ordena al ul*/
+    list-style: none;
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+
+}
+
+nav ul li{
+    margin: 0 20px;/*primer parametro arriba y abajo ,segundo parametro izqueirda y arriba*/
+}
+nav ul li a{
+    color: blue;
+    text-decoration: none;/*si no pongo text decoraction sale con subrallado*/
+    padding: 10px;
+    display: block;
+    font-family: 'century gothic';
+    font-weight: bold;
+    }
+
+    main{/* es para ordenar las cajas al lado como en columna.....el main es una semantica ya que le di el nombre*/
+        display: flex;
+        pad: 2.5rem;
+    }
+    .content{
+        flex: 3;
+        padding-right: 2rem;/* es para que se separe la columna a la derecha*/
+    }
+
+    aside{
+       flex: 1;
+       background-color: aqua;
+       padding: 1rem;
+       border-left: 1px dashed brown;
+    
+    }
+
+    aside nav ul{/*ubicate en la lina desordena que se ubica en aside pero en el nav en el ul*/
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+
+    }
+
+    aside nav ul li a{
+        color: chartreuse;
+        text-decoration: none;
+        font-family: 'Calibri ligth';
+
+    }
+
+    aside nav ul li a:hover{/* para cuando se pase el mouse cambie de color*/
+        color: rgb(195, 0, 255);
+        text-decoration: solid;
+        font-family: 'arial';
+        background-color: black;
+
+    }article picture img{
+        border-radius: 25%;
+        border: 1px solid black;
+        box-shadow: 5px 5px 10px black;
+    }
+
+
+
+
